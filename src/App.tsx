@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+// import Normalize from 'react-normalize';
 import './App.css';
+
+import Header from './components/Header';
+import Navbar from './components/Navbar';
+
+import WelcomeSection from './components/sections/WelcomeSection';
+import ThreatmentSection from './components/sections/ThreatmentSection';
+import FactsSection from './components/sections/FactsSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Normalize /> */}
+      <div className="App">
+        <Header />
+        <Navbar />
+        <WelcomeSection id="Welcome" dark={false} />
+        <ThreatmentSection id="Threatment" dark />
+        <FactsSection id="Facts" dark={false} />
+      </div>
+    </>
   );
 }
 

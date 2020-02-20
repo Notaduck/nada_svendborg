@@ -1,0 +1,32 @@
+.header_image{
+    height: 88vh;
+    width: 100%;
+    left: 0;
+    object-fit: cover;
+    position: relative;
+}
+
+.site_title{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 100%;
+    color: white;
+    margin-bottom: 20px;
+    transform: none;
+    z-index: 1;
+    line-height: 20px;
+}
+
+.title{
+ font-size: 45px;
+}
+
+.sub_title{
+  font-size: 18px;
+}
+
+.back{
+    font-size: 10px;
+    display: flex;
+}
