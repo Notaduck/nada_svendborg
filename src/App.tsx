@@ -1,24 +1,25 @@
 import React from 'react';
-// import Normalize from 'react-normalize';
-import './App.css';
+// import './App.css';
 
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import WelcomeSection from './components/sections/WelcomeSection';
 import ThreatmentSection from './components/sections/ThreatmentSection';
-import FactsSection from './components/sections/FactsSection';
+// import FactsSection from './components/sections/FactsSection';
+import FactsSection from './components/sections/FactsSection'
 
 function App() {
   return (
     <>
-      {/* <Normalize /> */}
-      <div className="App">
+      <div >
         <Header />
         <Navbar />
         <WelcomeSection id="Welcome" dark={false} />
         <ThreatmentSection id="Threatment" dark />
         <FactsSection id="Facts" dark={false} />
+        <Footer />
       </div>
     </>
   );

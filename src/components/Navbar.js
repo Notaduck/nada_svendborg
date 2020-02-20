@@ -29,7 +29,7 @@ export default class Navbar extends Component {
                 to="Welcome"
                 spy
                 smooth
-                offset={-70}
+                offset={-48}
                 duration={500}
               >
                 Velkommen
