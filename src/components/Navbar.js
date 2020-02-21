@@ -29,7 +29,7 @@ export default class Navbar extends Component {
                 to="Welcome"
                 spy
                 smooth
-                offset={-70}
+                offset={-150}
                 duration={500}
               >
                 Velkommen
@@ -42,7 +42,7 @@ export default class Navbar extends Component {
                 to="Threatment"
                 spy
                 smooth
-                offset={-70}
+                offset={-220}
                 duration={500}
               >
                 Behandlingen
@@ -55,7 +55,7 @@ export default class Navbar extends Component {
                 to="Facts"
                 spy
                 smooth
-                offset={-70}
+                offset={-160}
                 duration={500}
               >
                 Facts
@@ -68,7 +68,7 @@ export default class Navbar extends Component {
                 to="FindUs"
                 spy
                 smooth
-                offset={-70}
+                offset={-10}
                 duration={500}
               >
                 Find os
