@@ -29,7 +29,7 @@ export default class Navbar extends Component {
                 to="Welcome"
                 spy
                 smooth
-                offset={-48}
+                offset={-70}
                 duration={500}
               >
                 Velkommen
@@ -59,6 +59,19 @@ export default class Navbar extends Component {
                 duration={500}
               >
                 Facts
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="FindUs"
+                spy
+                smooth
+                offset={-70}
+                duration={500}
+              >
+                Find os
               </Link>
             </li>
           </ul>

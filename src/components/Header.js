@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/header.css'
+import '../styles/header.css';
 
 const Header = () => (
   <div>
@@ -8,7 +8,7 @@ const Header = () => (
       <h1 className="title">NADA Svendborg</h1>
       <h4 className="sub_title"> – certificerede nadaudøvere</h4>
     </div>
-  </div >
+  </div>
 );
 
 export default Header;
