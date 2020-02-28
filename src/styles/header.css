@@ -1,9 +1,10 @@
-.header_wrapper{
+.header_wrapper {
     overflow: hidden;
     position: relative;
+    padding:
 }
 
-.header_image{
+.header_image {
     height: 88vh;
     width: 100%;
     left: 0;
@@ -11,7 +12,7 @@
     position: relative;
 }
 
-.site_title{
+.site_title {
     position: absolute;
     overflow: hidden;
     top: 70%;
@@ -24,15 +25,15 @@
     line-height: 20px;
 }
 
-.title{
- font-size: 45px;
+.title {
+    font-size: 45px;
 }
 
-.sub_title{
-  font-size: 18px;
+.sub_title {
+    font-size: 18px;
 }
 
-.back{
+.back {
     font-size: 10px;
     display: flex;
 }
