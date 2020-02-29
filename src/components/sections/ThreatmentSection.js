@@ -21,7 +21,7 @@ const ThreatmentSection = ({ id, dark }) => (
         <br />
         Pris er 25 kr. pr. gang, som dækker udgifter til NADA-nåle m.v. Der betales kontant eller med MobilePay.
       </p>
-      <img className='threatment_img' src={require('../../assets/threatment2.jpg')} />
+      <img className='threatment_img' src={require('../../assets/threatment2.jpg')} alt='' />
     </div>
   </Section>
 );
