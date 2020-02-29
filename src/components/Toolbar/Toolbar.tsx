@@ -33,7 +33,6 @@ const Toolbar = ({ drawerClickHandler }) => {
       <div className="toolbar_drawer">
         <DrawerToggleButton click={drawerClickHandler} />
       </div>
-
       <img
         src={arrow}
         className="nav-logo"
@@ -49,7 +48,7 @@ const Toolbar = ({ drawerClickHandler }) => {
       <div className="toolbar_navigation-items">
         <ul>
           {sections.map(section =>
-            <li className="nav-item" key={section.to}>
+            <li className="nav-item">
               <Link
                 activeClass="active"
                 to={section.to}
@@ -57,6 +56,7 @@ const Toolbar = ({ drawerClickHandler }) => {
                 smooth
                 offset={-150}
                 duration={500}
+                key={section.to}
               >
                 {section.title}
               </Link>
@@ -64,6 +64,7 @@ const Toolbar = ({ drawerClickHandler }) => {
           )}
         </ul>
       </div>
+      <div className="spacer" />
     </nav>
   </header>
   )

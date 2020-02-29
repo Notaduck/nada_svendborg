@@ -1,10 +1,12 @@
-import PropTypes from 'prop-types';
 import React from 'react';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import './SideDrawer.css';
 
+interface Props {
+  visible: boolean,
+}
 
-const sideDrawer = ({ visible }) => {
+const sideDrawer: React.FC<Props> = ({ visible }) => {
 
 
   const sections: { title: string, to: string }[] = [
@@ -52,10 +54,6 @@ const sideDrawer = ({ visible }) => {
 
     </nav>
   );
-};
-
-sideDrawer.propTypes = {
-  visible: PropTypes.bool,
 };
 
 export default sideDrawer;

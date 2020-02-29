@@ -4,7 +4,7 @@ import Section from '../Section';
 const Welcome = ({ id, dark }) => (
     <Section id={id} dark={dark}>
         <h1>Velkommen til NADA Svendborg</h1>
-        <p>Certificerede NADA-udøvere – et tilbud om NADA-behandling i Svendborg.</p>
+        <h3>Certificerede NADA-udøvere – et tilbud om NADA-behandling i Svendborg.</h3>
         <br />
         <p>
             NADA Svendborg er en frivillig forening, hvis formål er at give unge og voksne i Svendborg Kommune mulighed for at få kendskab til, afprøve og modtage NADA-behandling.
@@ -19,7 +19,10 @@ const Welcome = ({ id, dark }) => (
         <br />
         <p>
             Ved stort fremmøde kan vi i enkelte tilfælde, være nødsaget til at afvise, dem som vi ikke kan nå inden for åbningstiden.
-               </p>
+        </p>
+
+        <br />
+        <br />
         <p>
             <b> Åbningstider:</b> <br />
             Mandag og torsdag fra 16 til 18<br />
