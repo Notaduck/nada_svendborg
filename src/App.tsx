@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 import WelcomeSection from './components/sections/WelcomeSection';
 import ThreatmentSection from './components/sections/ThreatmentSection';
 import FactsSection from './components/sections/FactsSection'
 import FindUsSection from './components/sections/FindUsSection'
 
-
 import Toolbar from './components/Toolbar/Toolbar';
 import SideDrawer from './components/SideDrawer/SideDrawer';
 import Backdrop from './components/Backdrop/Backdrop';
-
 
 const App = () => {
   const [sideDrawerOpen, setsideDrawerOpen] = useState(false);
