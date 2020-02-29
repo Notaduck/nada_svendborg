@@ -1,4 +1,4 @@
-.circle {
+.circle{
     width: 186px;
     height: 186px;
     background: url(../assets/threatment.jpg);
@@ -6,8 +6,4 @@
     float: right;
     shape-outside: circle();
     margin: 20px;
-}
-
-.threatment_img {
-    border-radius: 50%;
 }
