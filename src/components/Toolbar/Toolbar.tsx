@@ -55,7 +55,7 @@ const Toolbar = ({ drawerClickHandler }) => {
                 to={section.to}
                 spy
                 smooth
-                offset={-150}
+                offset={-100}
                 duration={500}
                 key={section.to}
               >
