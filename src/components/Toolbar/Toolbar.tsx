@@ -1,29 +1,15 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import './Toolbar.css';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import arrow from '../../assets/icons8-scroll-up-100.png';
 
-const Toolbar = ({ drawerClickHandler }) => {
+interface Props {
+  sections: { id: string, title: string, tag: JSX.Element }[],
+  drawerClickHandler: () => void
+}
 
-  const sections: { title: string, to: string }[] = [
-    {
-      title: "Welcome",
-      to: "Welcome",
-    },
-    {
-      title: "Behandlingen",
-      to: "Threatment"
-    },
-    {
-      title: "Facts",
-      to: "Facts"
-    }, {
-      title: "Find os",
-      to: "FindUs"
-    }
-  ]
+const Toolbar: React.FC<Props> = ({ drawerClickHandler, sections }) => {
 
   const scrollToTop = () => {
     scroll.scrollToTop();
@@ -52,12 +38,12 @@ const Toolbar = ({ drawerClickHandler }) => {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to={section.to}
+                to={section.id}
                 spy
                 smooth
                 offset={-100}
                 duration={500}
-                key={section.to}
+                key={section.id}
               >
                 {section.title}
               </Link>
@@ -69,10 +55,6 @@ const Toolbar = ({ drawerClickHandler }) => {
     </nav>
   </header>
   )
-};
-
-Toolbar.propTypes = {
-  drawerClickHandler: PropTypes.func,
 };
 
 export default Toolbar;

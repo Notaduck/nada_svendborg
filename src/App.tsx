@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 import WelcomeSection from './components/sections/WelcomeSection';
-import ThreatmentSection from './components/sections/ThreatmentSection';
+import TreatmentSection from './components/sections/TreatmentSection';
 import FactsSection from './components/sections/FactsSection'
 import FindUsSection from './components/sections/FindUsSection'
 
@@ -29,18 +29,38 @@ const App = () => {
     backdrop = <Backdrop click={backDropClickHandler} />;
   }
 
+  const sections = [
+    {
+      id: "welcome",
+      title: "Velkommen",
+      tag: <WelcomeSection id="welcome" dark={false} />
+    },
+    {
+      id: "treatment",
+      title: "Behandlingen",
+      tag: <TreatmentSection id="treatment" dark />
+
+    },
+    {
+      id: "facts",
+      title: "Facts",
+      tag: <FactsSection id="facts" dark={false} />
+    },
+    {
+      id: "findUs",
+      title: "Find os",
+      tag: <FindUsSection id="findUs" dark />
+    }
+  ]
+
   return (
     <>
       <div >
         <Header />
-        <Toolbar drawerClickHandler={drawerToggleClickHandler} />
-        <SideDrawer visible={sideDrawerOpen} />
-
+        <Toolbar drawerClickHandler={drawerToggleClickHandler} sections={sections} />
+        <SideDrawer visible={sideDrawerOpen} sections={sections} />
         {backdrop}
-        <WelcomeSection id="Welcome" dark={false} />
-        <ThreatmentSection id="Threatment" dark />
-        <FactsSection id="Facts" dark={false} />
-        <FindUsSection id="FindUs" dark />
+        {sections.map(section => section.tag)}
         <Footer />
       </div>
     </>
