@@ -9,25 +9,6 @@ interface Props {
 
 const sideDrawer: React.FC<Props> = ({ visible, sections }) => {
 
-
-  // const sections: { title: string, to: string }[] = [
-  //   {
-  //     title: "Welcome",
-  //     to: "Welcome",
-  //   },
-  //   {
-  //     title: "Behandlingen",
-  //     to: "Threatment"
-  //   },
-  //   {
-  //     title: "Facts",
-  //     to: "Facts"
-  //   }, {
-  //     title: "Find os",
-  //     to: "FindUs"
-  //   }
-  // ]
-
   let drawerClassName = 'side-drawer';
 
   if (visible) {

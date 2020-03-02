@@ -1,6 +1,7 @@
 :root {
   --off-white: #fafafa;
 }
+
 .nav {
   background-color: var(--off-white);
   position: sticky;
@@ -20,8 +21,8 @@
   cursor: pointer;
 }
 
-.nav-item > .active {
-  border-bottom: 2px  solid #333;
+.nav-item>.active {
+  border-bottom: 2px solid #333;
 }
 
 .nav .nav-content {
