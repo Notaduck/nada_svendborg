@@ -3,7 +3,6 @@ import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 export class MapContainer extends Component {
     render() {
-        console.log(process.env.REACT_APP_GOOGLE_MAPS_API_KEY)
         return (
             <Map
                 google={this.props.google}
@@ -14,7 +13,7 @@ export class MapContainer extends Component {
                 }}
                 style={{
                     width: '100%',
-                    height: '40%',
+                    height: '50%',
                 }}
             >
 

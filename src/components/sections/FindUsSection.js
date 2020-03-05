@@ -17,9 +17,7 @@ const FindUsSection = ({ id, dark }) => (
           mail: nadasvendborg@gmail.com
             </p>
       </div>
-      <div>
-        <Map />
-      </div>
+      <Map />
     </div>
   </Section>
 );

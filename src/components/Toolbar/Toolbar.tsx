@@ -35,7 +35,7 @@ const Toolbar: React.FC<Props> = ({ drawerClickHandler, sections }) => {
       <div className="toolbar_navigation-items">
         <ul>
           {sections.map(section =>
-            <li className="nav-item">
+            <li className="nav-item" key={section.id}>
               <Link
                 activeClass="active"
                 to={section.id}
