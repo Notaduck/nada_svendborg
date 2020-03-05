@@ -4,11 +4,12 @@ import '../styles/section.css';
 interface props {
   children: Node,
   dark: boolean,
-  id: string
+  id: string,
+  cl?: string
 }
 
-const Section: React.FC<props> = ({ children, dark, id }) => (
-  <div className={`section${dark ? ' section-dark' : ''}`}>
+const Section: React.FC<props> = ({ children, dark, id, cl }) => (
+  <div className={`section${dark ? ' section-dark' : ''} ${cl}`} >
     <div className="section-content" id={id}>
       {children}
     </div>
