@@ -9,7 +9,7 @@
   color: white;
 }
 
-#findUs {
+/* #findUs {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -17,7 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+}  */
 
 .section-content {
   max-width: 800px;
@@ -33,4 +33,14 @@
   .section {
     height: 100%;
   }
+}
+
+#root>div>div.section.section-dark.find {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
