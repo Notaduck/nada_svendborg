@@ -33,23 +33,23 @@ const App = () => {
     {
       id: "welcome",
       title: "Velkommen",
-      tag: <WelcomeSection id="welcome" dark={false} />
+      tag: <WelcomeSection id="welcome" dark={false} key='welcome' />
     },
     {
       id: "treatment",
       title: "Behandlingen",
-      tag: <TreatmentSection id="treatment" dark />
+      tag: <TreatmentSection id="treatment" dark key='treatment' />
 
     },
     {
       id: "facts",
       title: "Facts",
-      tag: <FactsSection id="facts" dark={false} />
+      tag: <FactsSection id="facts" dark={false} key='facts' />
     },
     {
       id: "findUs",
       title: "Find os",
-      tag: <FindUsSection id="findUs" dark />
+      tag: <FindUsSection id="findUs" dark key='findus' />
     }
   ]
 
