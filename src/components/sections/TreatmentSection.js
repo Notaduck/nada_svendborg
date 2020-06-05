@@ -36,6 +36,18 @@ const ThreatmentSection = ({ id, dark }) => (
           <br />
           <br />
           <br />
+          <p>
+            {" "}
+            Du kan læse mere om NADA{" "}
+            <a
+              href={process.env.PUBLIC_URL + "/nada_pjece.pdf"}
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              her
+            </a>{" "}
+          </p>
         </p>
       </div>
       <div className="threatment_img">
