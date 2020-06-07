@@ -1,43 +1,25 @@
-import React from 'react';
-import Section from '../Section';
-import '../../styles/findus.css'
+import React from "react";
+import Section from "../Section";
+import "../../styles/findus.css";
 
+const FindUsSection = ({ id, dark }) => {
+  const mail = "nadasvendborg@gmail.com";
 
-import { Map, Marker, Popup, TileLayer } from "react-leaflet";
-
-const FindUsSection = ({ id, dark }) => (
-  <Section id={id} dark={dark} cl='find' >
-    <div className="leaflet_container">
-      <Map
-        center={[50, 10]}
-        zoom={6}
-        maxZoom={10}
-        attributionControl={true}
-        zoomControl={true}
-        doubleClickZoom={true}
-        scrollWheelZoom={true}
-        dragging={true}
-        animate={true}
-        easeLinearity={0.35}
-      >
-
-      </Map>
-
-    </div>
-    {/* <div className='container'>
+  return (
+    <Section id={id} dark={dark} cl="find">
       <div className="contact_info">
         <p>
           NADA Svendborg
-              <br />
+          <br />
           Frivillighuset, 2. sal,
-              <br />
+          <br />
           Havnegade 3, 5700 Svendborg
-              <br />
-          mail: nadasvendborg@gmail.com
-            </p>
+          <br />
+          Mail: <a href={"mailto:" + mail}>{mail}</a>
+        </p>
       </div>
-    </div> */}
-  </Section>
-);
+    </Section>
+  );
+};
 
 export default FindUsSection;

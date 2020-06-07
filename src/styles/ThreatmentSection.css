@@ -1,15 +1,13 @@
-.circle {
-    width: 186px;
-    height: 186px;
-    background: url(../assets/threatment.jpg);
-    border-radius: 50%;
-    float: right;
-    shape-outside: circle();
-    margin: 20px;
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content a {
+  color: white
 }
 
 .threatment_img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+  width: 50%;
+  height: 50%;
 }
