@@ -3,7 +3,8 @@
   flex-direction: row;
 }
 
-.content {
+.content a {
+  color: white
 }
 
 .threatment_img {

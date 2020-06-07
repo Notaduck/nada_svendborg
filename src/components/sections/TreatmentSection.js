@@ -6,6 +6,9 @@ const ThreatmentSection = ({ id, dark }) => (
   <Section id={id} dark={dark}>
     <h1>Selve behandlingen</h1>
     <div className="container">
+      <div className="threatment_img">
+        <img src={require("../../assets/threatment2.jpg")} alt="" />
+      </div>
       <div className="content">
         <p>
           Tilbuddet er åbent 2 gange om ugen. Åbningstid er mandag og torsdag
@@ -36,9 +39,9 @@ const ThreatmentSection = ({ id, dark }) => (
           <br />
           <br />
           <br />
-          <p>
+          <h4>
             {" "}
-            Du kan læse mere om NADA{" "}
+            Vil du vide mere on NADA behandlingen kan du læse mere{" "}
             <a
               href={process.env.PUBLIC_URL + "/nada_pjece.pdf"}
               target="_blank"
@@ -47,11 +50,8 @@ const ThreatmentSection = ({ id, dark }) => (
             >
               her
             </a>{" "}
-          </p>
+          </h4>
         </p>
-      </div>
-      <div className="threatment_img">
-        <img src={require("../../assets/threatment2.jpg")} alt="" />
       </div>
     </div>
   </Section>

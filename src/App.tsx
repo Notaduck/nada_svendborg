@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-
 import WelcomeSection from "./components/sections/WelcomeSection";
 import TreatmentSection from "./components/sections/TreatmentSection";
 import FactsSection from "./components/sections/FactsSection";
@@ -55,6 +55,11 @@ const App = () => {
   return (
     <>
       <div>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>NADA Svendborg</title>
+          <link rel="canonical" href="https://nada-svendborg.dk" />
+        </Helmet>
         <Header />
         <Toolbar
           drawerClickHandler={drawerToggleClickHandler}
