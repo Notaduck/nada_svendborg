@@ -6,6 +6,7 @@ const ThreatmentSection = ({ id, dark }) => (
   <Section id={id} dark={dark}>
     <h1>Selve behandlingen</h1>
     <div className="container">
+      r
       <div className="threatment_img">
         <img src={require("../../assets/threatment2.jpg")} alt="" />
       </div>
