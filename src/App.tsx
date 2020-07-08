@@ -3,10 +3,10 @@ import { Helmet } from "react-helmet";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import WelcomeSection from "./components/sections/WelcomeSection";
-import TreatmentSection from "./components/sections/TreatmentSection";
-import FactsSection from "./components/sections/FactsSection";
-import FindUsSection from "./components/sections/FindUsSection";
+import WelcomeSection from "./components/sections/WelcomeSection/WelcomeSection";
+import TreatmentSection from "./components/sections/TreatmentSection/TreatmentSection";
+import FactsSection from "./components/sections/FactsSection/FactsSection";
+import FindUsSection from "./components/sections/FindUsSection/FindUsSection";
 
 import Toolbar from "./components/Toolbar/Toolbar";
 import SideDrawer from "./components/SideDrawer/SideDrawer";

@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../Section";
-import "../../styles/findus.css";
+import "./FindUsSection.css";
 
 const FindUsSection = ({ id, dark }) => {
   const mail = "nadasvendborg@gmail.com";

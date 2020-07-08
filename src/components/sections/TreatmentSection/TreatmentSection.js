@@ -1,13 +1,13 @@
 import React from "react";
 import Section from "../Section";
-import "../../styles/ThreatmentSection.css";
+import "./ThreatmentSection.css";
 
 const ThreatmentSection = ({ id, dark }) => (
   <Section id={id} dark={dark}>
     <h1>Selve behandlingen</h1>
     <div className="container">
       <div className="threatment_img">
-        <img src={require("../../assets/threatment2.jpg")} alt="" />
+        <img src={require("../../../assets/threatment2.jpg")} alt="" />
       </div>
       <div className="content">
         <p>
