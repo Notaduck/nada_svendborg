@@ -11,7 +11,7 @@ const Header = () => (
     <div className="site_title">
       <h1 className="sub_title">
         {" "}
-        VI HAR MIDLIDERTIDIGT LUKKET GRUNDET CORONA!
+        VI HAR MIDLERTIDIGT LUKKET GRUNDET CORONA!
       </h1>
       <h1 className="title">NADA Svendborg </h1>
       <h4 className="sub_title"> – certificerede nadaudøvere</h4>
