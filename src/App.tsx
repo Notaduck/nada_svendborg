@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import AttentionSection from "./components/sections/Attention/Attention";
 import WelcomeSection from "./components/sections/WelcomeSection/WelcomeSection";
 import TreatmentSection from "./components/sections/TreatmentSection/TreatmentSection";
 import FactsSection from "./components/sections/FactsSection/FactsSection";
@@ -30,6 +30,11 @@ const App = () => {
   }
 
   const sections = [
+    {
+      id: "attention",
+      title: "Corona Info",
+      tag: <AttentionSection id="attention" dark={true} key="attention" />,
+    },
     {
       id: "welcome",
       title: "Velkommen",
@@ -68,7 +73,6 @@ const App = () => {
         <SideDrawer visible={sideDrawerOpen} sections={sections} />
         {backdrop}
         {sections.map((section) => section.tag)}
-        {/* <Footer /> */}
       </div>
     </>
   );
