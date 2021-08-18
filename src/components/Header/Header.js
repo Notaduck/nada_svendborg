@@ -11,7 +11,7 @@ const Header = () => (
     <div className="site_title">
       <h1 className="sub_title">
         {" "}
-        VI HAR MIDLERTIDIGT LUKKET GRUNDET CORONA!
+	Vi kan med glæde meddele, at NADA-cafeen åbner op <strong> mandag d. 23/8 kl 16-18</strong>.
       </h1>
       <h1 className="title">NADA Svendborg </h1>
       <h4 className="sub_title"> – certificerede nadaudøvere</h4>
