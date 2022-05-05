@@ -30,11 +30,11 @@ const App = () => {
   }
 
   const sections = [
-    {
-      id: "attention",
-      title: "Corona Info",
-      tag: <AttentionSection id="attention" dark={true} key="attention" />,
-    },
+   // {
+  //   id: "attention",
+   //   title: "Corona Info",
+  //    tag: <AttentionSection id="attention" dark={true} key="attention" />,
+  //  },
     {
       id: "welcome",
       title: "Velkommen",
