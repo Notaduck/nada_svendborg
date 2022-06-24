@@ -18,7 +18,7 @@
   overflow: hidden;
   top: 70%;
   left: -100%;
-  width: 100%;
+  width: 90%;
   color: white;
   margin-bottom: 20px;
   transform: none;
@@ -43,6 +43,26 @@
   font-size: 10px;
   display: flex;
 }
+
+@media only screen and (min-width: 600px) {
+.site_title {
+  position: absolute;
+  overflow: hidden;
+  top: 38%;
+  left: -100%;
+  width: 90%;
+  color: white;
+  margin-bottom: 20px;
+  transform: none;
+  /* z-index: 1; */
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-family: Lato, sans-serif;
+  -webkit-animation: slide 2s forwards;
+  animation: slide 2s forwards;
+}
+}
+
 
 @keyframes zoominout {
   0% {
