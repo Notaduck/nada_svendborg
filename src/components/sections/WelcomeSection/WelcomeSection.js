@@ -7,6 +7,8 @@ const Welcome = ({ id, dark }) => (
     <h2>
       Certificerede NADA-udøvere – et tilbud om NADA-behandling i Svendborg.{" "}
     </h2>
+      <h2>
+Vi holder ferie i juli måned, og starter op igen 3/8    </h2>
     <p>
       <br />
       NADA Svendborg er en frivillig forening, hvis formål er at give unge og
