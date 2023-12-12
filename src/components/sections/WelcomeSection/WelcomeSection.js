@@ -8,7 +8,7 @@ const Welcome = ({ id, dark }) => (
       Certificerede NADA-udøvere – et tilbud om NADA-behandling i Svendborg.{" "}
     </h2>
       <h2>
-Vi holder ferie i juli måned, og starter op igen 3/8    </h2>
+Da frivillighuset flytter matrikel, holder NADA-cafeen lukket fra og med 15/1 - 31/1. Herefter starter vi op i de fantastiske nye lokaler i Frivillighuset Kvægtorvet, på Frederiksgade nr 8 , Svendborg (tidligere den ene del af FremtidsFabrikken)	For at fejre dette giver vi i februar måned GRATIS NADA til alle.      </h2>
     <p>
       <br />
       NADA Svendborg er en frivillig forening, hvis formål er at give unge og
